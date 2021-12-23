@@ -6,7 +6,7 @@ L'objectif de ce projet est de découvrir et de maitriser différentes technos e
 Le projet de base est une application météo avec une architecture MVC classique. Le projet utilise l'API "Open Weather Map" gratuite. Il est organisé sous forme de branches avec des nouvelles features (migration de librairie, ajout de fonctionnalités..).
 
 ## Présentation technique
-- Création d'un projet avec les différentes lib Niji. Fonctionnellement, l'app permettra de récupérer des infos de météo.
+- Création d'un projet avec les différentes lib. Fonctionnellement, l'app permettra de récupérer des infos de météo.
 - Ajout d'une première itération de l'app dans une architecture MVC. Un seul écran avec la météo du jour.
 - Migration de l'architecture MVC vers un pattern MVVM. Introduction au data binding.
 - Ajout d'un launchscreen.
@@ -22,6 +22,7 @@ Le projet de base est une application météo avec une architecture MVC classiqu
 - Utilisation de RXSwift pour gérer les appels.
 - Implémentation de tests unitaires.
 - Migration Cocoapods -> Swift Package Manager.
+- Application de Swiftlint dans l'ensemble de l'app.
 
 ## Liens
 - [Doc RXSwift GitHub](https://github.com/ReactiveX/RxSwift)
