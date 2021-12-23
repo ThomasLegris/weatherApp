@@ -1,0 +1,160 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "Logger",
+        "repositoryURL": "https://github.com/shibapm/Logger",
+        "state": {
+          "branch": null,
+          "revision": "53c3ecca5abe8cf46697e33901ee774236d94cce",
+          "version": "0.2.3"
+        }
+      },
+      {
+        "package": "Moya",
+        "repositoryURL": "https://github.com/Moya/Moya.git",
+        "state": {
+          "branch": null,
+          "revision": "d27767c3624cc64a45bb371b267b89c92d70c670",
+          "version": "14.0.1"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "7a46a5fc86cb917f69e3daf79fcb045283d8f008",
+          "version": "8.1.2"
+        }
+      },
+      {
+        "package": "OHHTTPStubs",
+        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "state": {
+          "branch": null,
+          "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+          "version": "9.1.0"
+        }
+      },
+      {
+        "package": "PackageConfig",
+        "repositoryURL": "https://github.com/shibapm/PackageConfig.git",
+        "state": {
+          "branch": null,
+          "revision": "bf90dc69fa0792894b08a0b74cf34029694ae486",
+          "version": "0.13.0"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "09b3becb37cb2163919a3842a4c5fa6ec7130792",
+          "version": "2.2.1"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "ReactiveSwift",
+        "repositoryURL": "https://github.com/Moya/ReactiveSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "f195d82bb30e412e70446e2b4a77e1b514099e88",
+          "version": "6.1.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "7e5c77fd7fbb30259e8e6e6a41f32289f72e0812",
+          "version": "10.7.6"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "018adb3469c2882904febca251778129ef4a9b70",
+          "version": "10.7.2"
+        }
+      },
+      {
+        "package": "Reusable",
+        "repositoryURL": "https://github.com/AliSoftware/Reusable.git",
+        "state": {
+          "branch": null,
+          "revision": "86cd17aa27e80d20bfe2ea57dd08958cf64664f4",
+          "version": "4.1.1"
+        }
+      },
+      {
+        "package": "Rocket",
+        "repositoryURL": "https://github.com/shibapm/Rocket",
+        "state": {
+          "branch": null,
+          "revision": "51a77ce5fa66c42715c14dcc542c01cd7a60fb27",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "254617dd7fae0c45319ba5fbea435bf4d0e15b5d",
+          "version": "5.1.2"
+        }
+      },
+      {
+        "package": "SwiftShell",
+        "repositoryURL": "https://github.com/kareman/SwiftShell",
+        "state": {
+          "branch": null,
+          "revision": "a6014fe94c3dbff0ad500e8da4f251a5d336530b",
+          "version": "5.1.0-beta.1"
+        }
+      },
+      {
+        "package": "SwiftyUserDefaults",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults.git",
+        "state": {
+          "branch": null,
+          "revision": "f66bcd04088582c8fbb5cb8554d577e303bae396",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "Yams",
+        "repositoryURL": "https://github.com/jpsim/Yams",
+        "state": {
+          "branch": null,
+          "revision": "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
+          "version": "4.0.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
