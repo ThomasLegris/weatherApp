@@ -3,26 +3,33 @@ Application météo avec plusieurs écrans et plusieurs fonctionnalités. Mété
 L'objectif de ce projet est de découvrir et de maitriser différentes technos et libs iOS via un sample d'application.
 
 ## Organisation
-Le projet de base est une application météo avec une architecture MVC classique. Le projet utilise l'API "Open Weather Map" gratuite. Il est organisé sous forme de branches avec des nouvelles features (migration de librairie, ajout de fonctionnalités..).
+Le projet de base est une application météo avec une architecture MVC classique permettant d'avoir la mété d'une ville donnée. 
+Le projet utilise l'API "OpenWeatherMap" gratuite. 
+Cette application a évolué (migration d'architecture, nouvelles fonctionnalités, migration de librairies..) et voici la version finale.
 
-## Présentation technique
-- Création d'un projet avec les différentes lib. Fonctionnellement, l'app permettra de récupérer des infos de météo.
+## Historique
+- Création d'un projet Sample avec les librairies Reusable, Swiftgen, Cocoapods.
 - Ajout d'une première itération de l'app dans une architecture MVC. Un seul écran avec la météo du jour.
-- Migration de l'architecture MVC vers un pattern MVVM. Introduction au data binding.
+- Migration de l'architecture MVC vers un pattern **MVVM**. Introduction au data binding via l'objet Observable.
 - Ajout d'un launchscreen.
 - Ajout d'un nouvel écran permettant d'avoir le détail de la météo.
-- Migration des appels réseaux de URLSession vers Moya.
-- Utilisation de Realm pour enregistrer des Favoris depuis l'onglet détails.
-- Ajout d'une UITabBar pour la gestion d'onglet.
-- Création d'un onglet "Mes Favoris". Présentation d'une liste des lieux favoris avec un résumé de la météo actuelle. Navigation vers la page de détails pour chaque lieux favoris.
-- Ajout d'un onglet "Carte" pour sélectionner un endroit dans le mode. Utilisation de MapKit.
-- Création d'une MapAnnotation avec la météo courante pour la ville sélectionné.
+- Migration des appels réseaux de URLSession -> **Moya**.
+- Utilisation de **Realm** pour enregistrer des Favoris depuis l'onglet détails.
+- Ajout d'une **UITabBar** pour la gestion d'onglet.
+- Création d'un onglet "Mes Favoris". 
+- Présentation d'une liste des lieux favoris avec un résumé de la météo actuelle. Navigation vers la page de détails pour chaque lieux favoris.
+- Ajout d'un onglet "Carte" pour sélectionner un endroit dans le mode. Utilisation de **MapKit**.
+- Création d'une **MapAnnotation** avec la météo courante pour la ville sélectionné.
 - Affichage d'une vue en haut de la map pour chaque ville sélectionnée.
-- Refacto de la navigation: Utilisation du pattern Coordinator.
-- Utilisation de RXSwift pour gérer les appels.
-- Implémentation de tests unitaires.
-- Migration Cocoapods -> Swift Package Manager.
-- Application de Swiftlint dans l'ensemble de l'app.
+- Refacto de la navigation: Utilisation du pattern **Coordinator**.
+- Migration Observable vers **RXSwift**.
+- Implémentation de **Tests Unitaires**.
+- Migration Cocoapods -> **Swift Package Manager**.
+- Application de **Swiftlint**
+
+## Rendu final
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/34026747/191974986-7a2a75eb-04a2-4892-ac23-d7be293bb0dd.png">
+
 
 ## Liens
 - [Doc RXSwift GitHub](https://github.com/ReactiveX/RxSwift)
