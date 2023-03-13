@@ -3,7 +3,6 @@
 //
 
 import UIKit
-import SwiftyUserDefaults
 
 /// Screen which display details about a city weather.
 final class WeatherDetailsViewController: UIViewController {

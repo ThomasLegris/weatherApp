@@ -6,6 +6,7 @@ import SwiftyUserDefaults
 import Reachability
 import MapKit
 import RxSwift
+import WidgetKit
 
 /// View Model which handle business logic of the current weather screen.
 final class CurrentWeatherViewModel {
@@ -16,7 +17,7 @@ final class CurrentWeatherViewModel {
                                                                                      cityName: L10n.dash))
     var weatherError = BehaviorSubject<WeatherError>(value: .none)
     var updatedDate = BehaviorSubject<String>(value: "")
-
+    
     // MARK: - Private Properties
     private let disposeBag = DisposeBag()
 }
@@ -32,13 +33,13 @@ extension CurrentWeatherViewModel {
             weatherError.onNext(.noInternet)
             return
         }
-
+        
         guard let cityName = city,
               city?.isEmpty == false else {
             weatherError.onNext(.unknownCity)
             return
         }
-
+        
         WeatherApiManager
             .shared
             .cityWeather(cityName: cityName)
@@ -49,8 +50,10 @@ extension CurrentWeatherViewModel {
                         self?.weatherError.onNext(.unknownCity)
                         return
                     }
+                    // Update defaults to provide the name of city to the Widget.
+                    UserDefaults(suiteName: "group.weatherapp.MyWeatherApp.contents")?.set(model.cityName, forKey: "key_widgetCityName")
                     Defaults.lastSearchedCity = model.cityName
-
+                    WidgetCenter.shared.reloadAllTimelines()
                     self?.weatherModel.onNext(model)
                     self?.updateDate()
                 },
@@ -59,7 +62,7 @@ extension CurrentWeatherViewModel {
                 })
             .disposed(by: disposeBag)
     }
-
+    
     /// Call the manager in order to get weather information from coordinate.
     ///
     /// - Parameters:
@@ -69,12 +72,12 @@ extension CurrentWeatherViewModel {
             weatherError.onNext(.noInternet)
             return
         }
-
+        
         guard let coordinate = coordinate else {
             weatherError.onNext(.noInfo)
             return
         }
-
+        
         WeatherApiManager
             .shared
             .locationWeather(latitude: coordinate.latitude, longitude: coordinate.longitude)
@@ -98,17 +101,17 @@ private extension CurrentWeatherViewModel {
     /// Returns true if connected to internet, false otherwise.
     var isNetworkReachable: Bool {
         let reachability = try? Reachability()
-
+        
         return reachability?.connection == .wifi ||  reachability?.connection == .cellular
     }
-
+    
     /// Update weather last updated time in hour.
     func updateDate() {
         let currentDateTime = Date()
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         formatter.dateStyle = .none
-
+        
         updatedDate.onNext(formatter.string(from: currentDateTime))
         Defaults.lastUpdatedDate = try? updatedDate.value()
     }

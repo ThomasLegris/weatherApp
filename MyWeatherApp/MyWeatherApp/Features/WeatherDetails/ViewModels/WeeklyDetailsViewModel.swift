@@ -2,7 +2,6 @@
 //  Copyright (C) 2020 Thomas LEGRIS.
 //
 
-import SwiftyUserDefaults
 import Reachability
 import RxSwift
 
